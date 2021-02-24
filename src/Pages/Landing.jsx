@@ -20,7 +20,6 @@ function About() {
     return (
       <div>
         <Container style={{ marginTop: 80 }}>
-
           <Row>
           <Col size="6">
                 <img src={Logo} alt="Logo"
@@ -30,12 +29,9 @@ function About() {
             </Col>
           </Row>
           <Row> 
-            <Col size="lg-12" padding="p-">
-           
-            </Col>
+            <Col size="lg-12" padding="p-"></Col>
            </Row>
           <Row style={{ marginTop: 80 }}>
-           
                     <Card style={{ marginRight: 80 }}>
                         <CardBody>
                             <Row>
@@ -43,6 +39,10 @@ function About() {
                                     <Row>
                                       <p>
                                         Drop-In 
+                                      </p>
+                                    </Row>
+                                    <Row>
+                                      <p>
                                         Daily Rates
                                       </p>
                                     </Row>
@@ -60,6 +60,10 @@ function About() {
                                     <Row>
                                       <p>
                                         Part-Time/Full-Time
+                                      </p>
+                                    </Row>
+                                    <Row>
+                                      <p>
                                         On Calendar
                                       </p>
                                     </Row>
