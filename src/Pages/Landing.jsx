@@ -11,6 +11,8 @@ import Container from "../Components/Container";
 // import Row from "../Components/Row";
 // import Col from "../Components/Col";
 import Logo from "../Pictures/logo.jpg";
+import Desks from "../Pictures/image2.jpg"
+import Cozy from "../Pictures/image5.jpg"
 
 function About() {
   const style= {
@@ -19,13 +21,17 @@ function About() {
   }
     return (
       <div>
-        <Container style={{ marginTop: 80 }}>
+        <Container style={{ padding: 80 }}>
           <Row>
-          <Col size="6">
+            <Col size="6">
                 <img src={Logo} alt="Logo"
                 width={350}
                 height={250}
                 />
+            </Col>
+            <Col size="6">
+              <Row size="5"></Row>
+                <h1>Need a workspace?</h1>
             </Col>
           </Row>
           <Row> 
@@ -93,14 +99,33 @@ function About() {
                 </Row>
           <Row> 
             <Col size="lg-12" padding="p-">
-              <h4 className="text-center" style={style}>
-                
-              </h4>
+              <h4 className="text-center" style={style}></h4>
             </Col>
            </Row>
-           <Row> 
-            <Col size="lg-12" padding="p-">
-           
+           <Row style={{ marginTop: 80 }}> 
+            <Col size="lg-6">
+            <h1>
+              Come work with us!
+            </h1>
+            </Col>
+            <Col size="6">
+                <img src={Desks} alt="Logo"
+                width={350}
+                height={250}
+                />
+            </Col>
+           </Row>
+           <Row style={{ marginTop: 80 }}>  
+           <Col size="6">
+                <img src={Cozy} alt="Logo"
+                width={350}
+                height={250}
+                />
+            </Col>
+            <Col size="lg-6">
+            <h1>
+              The coziest place to work!
+            </h1>
             </Col>
            </Row>
         </Container>
